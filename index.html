@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Domain for Sale</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
+      padding: 0 1rem;
+    }
+    .container {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #1e293b;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    }
+    h1, h3 {
+      text-align: center;
+      color: #38bdf8;
+    }
+    p {
+      text-align: center;
+      color: #cbd5e1;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      background: #334155;
+      color: #f1f5f9;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #94a3b8;
+    }
+    button {
+      background-color: #38bdf8;
+      color: #0f172a;
+      font-weight: bold;
+      border: none;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #0ea5e9;
+    }
+    .contact-section {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .contact-links a {
+      display: inline-block;
+      margin: 0.5rem;
+      text-decoration: none;
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+    }
+    .email-btn {
+      background-color: #10b981;
+    }
+    .whatsapp-btn {
+      background-color: #25D366;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .whatsapp-btn img {
+      width: 20px;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>This Domain is For Sale</h1>
+    <p>Fill out the form and we’ll get in touch with you!</p>
+
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/mldjozaa" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email (required)" required />
+      <input type="text" name="phone" placeholder="Your Phone (optional)" />
+      <textarea name="message" placeholder="Message (optional)" rows="4"></textarea>
+      <button type="submit">Submit Inquiry</button>
+    </form>
+
+    <!-- Contact Info -->
+    <div class="contact-section">
+      <h3>Prefer to reach out directly?</h3>
+      <div class="contact-links">
+        <a href="mailto:gs06pta@gmail.com" class="email-btn">Email</a>
+        <a href="https://wa.me/919877550841" class="whatsapp-btn">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
